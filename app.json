@@ -4,8 +4,6 @@
   "logo": "https://telegra.ph/file/2a06381b260c3f096a612.jpg",
   "keywords": ["bot"],
   "success_url": "/",
-
-    "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
@@ -168,9 +166,8 @@
       "required": false,
       "value": "➺ѕเℓεɳƭ_ℓσѵε૨࿐"
      }
-},
-
-"buildpacks": [
+  },
+  "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
