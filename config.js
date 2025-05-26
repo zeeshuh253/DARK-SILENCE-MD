@@ -57,6 +57,7 @@ module.exports = {
     BOT_NAME: process.env.BOT_NAME || "➺DARK-SILENCE-MD",
     STATUS_REPLY: process.env.STATUS_REPLY || "`➺үσυя sтαтυs sεεη נυsт ησω вү ∂αяк-sιℓεηcε-м∂`",
     STATUS_REACT: process.env.STATUS_REACT || "true",
+    INBOX_BLOCK: process.env.INBOX_BLOCK || "false",
     ANTI_VV: process.env.ANTI_VV || "true",// true for anti once view 
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same", // change it to 'log' if you want to resend deleted message in ib chat 
     OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39"// omdbapi.com
