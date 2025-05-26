@@ -161,16 +161,24 @@
       "value": "923096287432"
     }, 
 
-     "OWNER_NAME": {
+    "OWNER_NAME": {
       "description": "replace it with your own name.",
       "required": false,
       "value": "➺ѕเℓεɳƭ_ℓσѵε૨࿐"
-     }
+     },
+
+    "INBOX_BLOCK": {
+      "description": "make it true if you sure you want to block inbox user.",
+      "required": true,
+      "value": "false"
+   }
+    
   },
+  
   "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
+        };
      ],
   "stack": "heroku-24"
-}
+};
