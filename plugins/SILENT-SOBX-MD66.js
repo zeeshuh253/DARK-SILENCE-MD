@@ -15,14 +15,20 @@ cmd({
     if (!quoted) return reply("Please reply to a ViewOnce message");
 
     if (quoted.mtype === "viewOnceMessageV2") {
-      let mediaType = Object.keys(quoted.message.viewOnceMessageV2.message)[0];
-      let savedPath = await conn.downloadAndSaveMediaMessage(quoted.message.viewOnceMessageV2.message[mediaType]);
-      
+      let viewOnceData = quoted.message.viewOnceMessageV2.message;
+      let mediaType = Object.keys(viewOnceData)[0];
+
       if (mediaType === "imageMessage") {
-        return conn.sendMessage(mek.chat, { image: { url: savedPath }, caption: quoted.message.viewOnceMessageV2.message[mediaType].caption });
+        console.log("Quoting an image");
+        let caption = viewOnceData.imageMessage.caption;
+        let savedPath = await conn.downloadAndSaveMediaMessage(viewOnceData.imageMessage);
+        return conn.sendMessage(mek.chat, { image: { url: savedPath }, caption: caption });
       } else if (mediaType === "videoMessage") {
-        return conn.sendMessage(mek.chat, { video: { url: savedPath }, caption: quoted.message.viewOnceMessageV2.message[mediaType].caption });
+        let caption = viewOnceData.videoMessage.caption;
+        let savedPath = await conn.downloadAndSaveMediaMessage(viewOnceData.videoMessage);
+        return conn.sendMessage(mek.chat, { video: { url: savedPath }, caption: caption });
       } else if (mediaType === "audioMessage") {
+        let savedPath = await conn.downloadAndSaveMediaMessage(viewOnceData.audioMessage);
         return conn.sendMessage(mek.chat, { audio: { url: savedPath }});
       }
     } else {
