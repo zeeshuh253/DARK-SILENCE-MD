@@ -171,7 +171,19 @@
       "description": "make it true if you sure you want to block inbox user.",
       "required": true,
       "value": "false"
-   }
+   }, 
+
+    "ANTI_CALL": {
+      "description": "Make it true if you want bot automatically decline your call.",
+      "required": true,
+      "value": "false"
+    },
+
+    "BAD_NUMBER_BLOCKER": {
+      "description": "Make it true if you want bot auto block bad numbers example 263 or 212.",
+      "required": true,
+      "value": "false"
+    }
     
   },
   
