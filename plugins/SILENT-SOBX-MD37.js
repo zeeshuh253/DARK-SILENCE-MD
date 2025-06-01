@@ -128,7 +128,10 @@ let madeSetting =`
 *┃★╭━━━━━━━━━━━┈⊷*
 *┃◈┃•* *🂱 ALWAYS_ONLINE:* ➠ ${isEnabled(config.ALWAYS_ONLINE) ? "✅" : "❌"}
 *┃◈┃•* *🂱 ANTI_LINK:* ➠ ${isEnabled(config.ANTI_LINK) ? "✅" : "❌"}
+*┃◈┃•* *🂱 ANTI_CALL:* ➠ ${isEnabled(config.ANTI_CALL) ? "✅" : "❌"}
 *┃◈┃•* *🂱 ANTI_BAD:* ➠ ${isEnabled(config.ANTI_BAD) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_BLOCK:* ➠ ${isEnabled(config.AUTO_BLOCK) ? "✅" : "❌"}
+*┃◈┃•* *🂱 BAD_NUMBER_BLOCKER:* ➠ ${isEnabled(config.BAD_NUMBER_BLOCKER) ? "✅" : "❌"}
 *┃◈┃•* *🂱 CURRENT_STATUS:* ➠ ${isEnabled(config.CURRENT_STATUS) ? "✅" : "❌"}
 *┃◈┃•* *🂱 FAKE_RECORDING:* ➠ ${isEnabled(config.FAKE_RECORDING) ? "✅" : "❌"}
 *┃◈┃•* *🂱 FAKE_TYPING:* ➠ ${isEnabled(config.FAKE_RECORDING) ? "✅" : "❌"}
