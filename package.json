@@ -82,6 +82,7 @@
         "mime-types": "2.1.35",
         "nima-wabeta-info": "1.0.5",
         "node-fetch": "^2.6.1",
+        "node-cache" : "5.1.2", 
         "pastebin-js": "latest",
         "path": "^0.12.7",
         "pino": "^9.5.0",
