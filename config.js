@@ -32,7 +32,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     SESSION_ID: process.env.SESSION_ID || "DARK-SILENCE-MD~iYEhDT7L#hxfC629CvqEMmekkKnRl1AI9hOyEzYfzEFGwX9ydbGk",
-    CAPTION: process.env.CAPTION || "POWERED BY SILENTLOVER432",
+    CAPTION: process.env.CAPTION || "zeeshu creater",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
     READ_MESSAGE: process.env.READ_MESSAGE || "false", // Added auto-read configuration
